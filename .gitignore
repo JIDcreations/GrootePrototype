@@ -1,5 +1,8 @@
-# Ignore large project photo assets (733MB — too large for GitHub)
+# Ignore large source photo/video assets (733MB — too large for GitHub/Netlify repo deploys)
 assets/Content/
+
+# Keep optimized deploy media in git
+# assets/site-media/
 
 # macOS
 .DS_Store
