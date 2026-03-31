@@ -228,7 +228,7 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 .nav__logo img {
   height: 38px;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: none;
   transition: filter var(--dur-base) var(--ease-out-expo);
 }
 
