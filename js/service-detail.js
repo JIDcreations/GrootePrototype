@@ -15,8 +15,6 @@
       titlePlain: 'Transport',
       lead: 'Zwaar, uitzonderlijk of internationaal: wij organiseren transporttrajecten met dezelfde precisie waarmee we ze uitvoeren op de werf.',
       metaDescription: 'Transport op maat voor industriële projecten, uitzonderlijk vervoer en internationale trajecten door De Groote NV.',
-      heroImage: 'assets/site-media/8_laden van plaatschaar/ok/031BE157-A506-43F8-A9CA-F40683DA9358.jpg',
-      heroAlt: 'Transport van zware industriële machines',
       introTitle: 'Transport met controle over elke stap',
       paragraphs: [
         'Transportprojecten in de industrie vragen meer dan laadvermogen. De juiste route, de juiste vergunningen en de juiste timing bepalen of een traject veilig en efficiënt verloopt. Daarom combineren wij praktisch vakmanschap met een sterk voorbereidende fase.',
@@ -36,8 +34,6 @@
       titlePlain: 'Montage & demontage',
       lead: 'Wij demonteren, verhuizen en monteren installaties met één ploeg die de technische logica van het volledige traject begrijpt.',
       metaDescription: 'Montage en demontage van industriële installaties door ervaren technici van De Groote NV.',
-      heroImage: 'assets/site-media/2_opbouw fabriek in Frankrijk/ok/484B88BE-281C-4EE2-BF5D-839F26CE399D.jpg',
-      heroAlt: 'Montage van een industriële installatie',
       introTitle: 'Technisch vakwerk op de juiste plaats in het project',
       paragraphs: [
         'Montage en demontage zijn zelden geïsoleerde opdrachten. Ze maken deel uit van een groter geheel waarin timing, veiligheid en technische nauwkeurigheid elkaar moeten versterken. Daarom werken wij met eigen technici die vertrouwd zijn met industriële installaties, werfcoördinatie en strakke planningen.',
@@ -57,8 +53,6 @@
       titlePlain: 'Opslag',
       lead: 'Tijdelijke of langdurige opslag van machines en industriële goederen, met de juiste handling en bescherming vanaf het eerste moment.',
       metaDescription: 'Beveiligde opslag voor industriële machines en projectmateriaal bij De Groote NV.',
-      heroImage: 'assets/site-media/23_volledige verhuis fabriek/ok/08D1D69D-8F88-4051-93E2-2EB2B91C68BF.jpg',
-      heroAlt: 'Opslag van industrieel materieel',
       introTitle: 'Opslag als actieve schakel in uw project',
       paragraphs: [
         'Opslag is vaak geen eindpunt maar een tussenfase. Machines wachten op montage, onderdelen moeten gefaseerd geleverd worden of materiaal moet tijdelijk uit productie gehaald worden. Daarom behandelen wij opslag als een logistieke stap met evenveel aandacht als transport of hijswerk.',
@@ -78,8 +72,6 @@
       titlePlain: 'Hijswerk',
       lead: 'Van gecontroleerde lifts in productiehallen tot complexe multi-crane operaties op uitdagende werven.',
       metaDescription: 'Hijswerk, liftstudies en complexe kraanoperaties voor industriële projecten bij De Groote NV.',
-      heroImage: 'assets/site-media/4_wegnemen loopkat/ok/0F35C2C2-4C1C-47D8-BC19-92A50DD553F7.jpg',
-      heroAlt: 'Hijswerk met zwaar materieel',
       introTitle: 'Hijswerk waarin voorbereiding het verschil maakt',
       paragraphs: [
         'Sterk hijswerk begint niet op het moment van heffen, maar bij de voorbereiding. Gewicht, draaicirkels, ondergrond, obstakels en sequentie bepalen samen hoe veilig en efficiënt een lift kan verlopen. Daarom werken wij vanuit een heldere technische analyse naar een beheersbare uitvoering.',
@@ -99,8 +91,6 @@
       titlePlain: 'Engineering',
       lead: 'Technische voorbereiding, maatwerkopstellingen en projectcoördinatie die complexe verplaatsingen uitvoerbaar maken.',
       metaDescription: 'Engineering, stabiliteitsstudies en maatwerkoplossingen voor industriële verhuisprojecten bij De Groote NV.',
-      heroImage: 'assets/site-media/25_skidsytemen/ok/18B2BD82-5FC4-4080-ADF6-768ABA0A3D42_1_102_o.jpg',
-      heroAlt: 'Engineering en maatwerkopstelling',
       introTitle: 'Engineering die de uitvoering eenvoudiger maakt',
       paragraphs: [
         'Bij complexe industriële verplaatsingen is voorbereiding geen administratieve stap, maar een essentieel deel van de oplossing. Ons engineeringteam vertaalt technische risico’s en randvoorwaarden naar een uitvoerbaar plan op maat van de site, de last en de gewenste timing.',
@@ -120,8 +110,6 @@
       titlePlain: 'Interne verplaatsing',
       lead: 'Precisieverplaatsingen binnen productiehallen en technische ruimtes, afgestemd op bestaande installaties en lopende activiteiten.',
       metaDescription: 'Interne verplaatsing van machines en installaties met precisie door De Groote NV.',
-      heroImage: 'assets/site-media/10_manipulatiewerken/ok/096A2550-A314-4166-97F9-2D0A18E50C32.jpg',
-      heroAlt: 'Interne verplaatsing van zware machines',
       introTitle: 'Precisiewerk in een beperkte werkomgeving',
       paragraphs: [
         'Interne verplaatsingen vragen een andere aanpak dan klassiek transport. Ruimte is beperkt, doorgangen zijn smal en de impact op lopende productie moet vaak minimaal blijven. Daarom werken we met compacte systemen en een uitvoeringsplan dat vertrekt vanuit de realiteit van de site.',
@@ -141,8 +129,6 @@
       titlePlain: 'Kraanverhuur',
       lead: 'Flexibele inzet van autokranen en telescoopkranen, met de optie om meteen de juiste machinist en werfkennis mee te schakelen.',
       metaDescription: 'Kraanverhuur met of zonder machinist voor industriële en bouwprojecten bij De Groote NV.',
-      heroImage: 'assets/site-media/11_plaatsen boom met telescoopkraa/ok/20FA3E8F-D252-4694-AEE9-752AA7B953FA.jpg',
-      heroAlt: 'Kraanverhuur voor industriële projecten',
       introTitle: 'De juiste kraan, correct ingepland',
       paragraphs: [
         'Kraanverhuur draait niet alleen om capaciteit, maar ook om bereik, opstelling, timing en de context van de werf. Daarom bekijken we elke aanvraag vanuit de praktische situatie ter plaatse, zodat de inzet van de kraan klopt vanaf dag één.',
@@ -181,13 +167,6 @@
     if (el) el.innerHTML = value;
   };
 
-  const setImage = (id, src, alt) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.src = src;
-    el.alt = alt;
-  };
-
   document.title = `${service.titlePlain} — De Groote NV`;
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) metaDescription.setAttribute('content', service.metaDescription);
@@ -196,21 +175,9 @@
   setText('detail-label', service.label);
   setHtml('detail-title', service.titleHtml);
   setText('detail-lead', service.lead);
-  setImage('detail-hero-image', service.heroImage, service.heroAlt);
   setText('detail-intro-title', service.introTitle);
   setText('detail-paragraph-1', service.paragraphs[0]);
   setText('detail-paragraph-2', service.paragraphs[1]);
-
-  const galleryContainer = document.getElementById('detail-gallery');
-  if (galleryContainer) {
-    galleryContainer.innerHTML = service.gallery
-      .map(src => `
-        <div class="detail-gallery__item">
-          <img class="detail-gallery__img" src="${src}" alt="${service.titlePlain}" loading="lazy">
-        </div>
-      `)
-      .join('');
-  }
 
   const relatedContainer = document.getElementById('detail-related-services');
   if (relatedContainer) {
