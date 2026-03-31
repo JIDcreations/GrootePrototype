@@ -118,6 +118,38 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 .section--surface { background: var(--c-surface); }
 
 /* ============================================================
+   INNER PAGE NAV — always white, always real logo
+   Targets any page that has a .page-hero (all subpages)
+   :has() is supported in all modern browsers
+   ============================================================ */
+html:has(.page-hero) .nav {
+  background: var(--c-white);
+  box-shadow: 0 1px 0 var(--c-border);
+}
+
+html:has(.page-hero) .nav__logo img {
+  filter: none;
+}
+
+html:has(.page-hero) .nav__link {
+  color: var(--c-ink-80);
+}
+
+html:has(.page-hero) .nav__link:hover {
+  color: var(--c-ink);
+}
+
+html:has(.page-hero) .nav__lang {
+  border-inline-start-color: var(--c-border);
+}
+
+html:has(.page-hero) .nav__lang-btn { color: var(--c-ink-40); }
+html:has(.page-hero) .nav__lang-btn.active { color: var(--c-ink); }
+html:has(.page-hero) .nav__lang-btn:hover { color: var(--c-ink); }
+html:has(.page-hero) .nav__lang-sep { color: var(--c-border); }
+html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
+
+/* ============================================================
    TYPOGRAPHY COMPONENTS
    ============================================================ */
 .eyebrow {
@@ -1398,7 +1430,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 .page-hero {
   padding-block-start: calc(var(--nav-h) + var(--section-py));
   padding-block-end: var(--section-py);
-  background: var(--c-ink);
+  background: #2A2A2A;
   color: var(--c-white);
   position: relative;
   overflow: hidden;
@@ -1423,7 +1455,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.12;
+  opacity: 0.35;
 }
 
 .page-hero__content {

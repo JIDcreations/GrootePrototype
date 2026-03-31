@@ -12,17 +12,21 @@
   const hamburger = document.querySelector('.nav__hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
 
-  // Scroll state
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      nav.classList.add('nav--scrolled');
-    } else {
-      nav.classList.remove('nav--scrolled');
-    }
-  }, { passive: true });
+  // Scroll state — only toggle on homepage (has fullscreen video hero)
+  const hasHero = !!document.querySelector('.hero');
 
-  // Init on load (in case page starts scrolled)
-  if (window.scrollY > 30) nav.classList.add('nav--scrolled');
+  if (hasHero) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        nav.classList.add('nav--scrolled');
+      } else {
+        nav.classList.remove('nav--scrolled');
+      }
+    }, { passive: true });
+
+    // Init in case page starts scrolled
+    if (window.scrollY > 30) nav.classList.add('nav--scrolled');
+  }
 
   // Mobile menu toggle
   if (hamburger && mobileNav) {
