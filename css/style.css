@@ -1505,8 +1505,8 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
    PAGE: INDUSTRIËLE VERHUIZING
    ============================================================ */
 .services-nav {
-  background: var(--c-white);
-  border-block-end: 1px solid var(--c-border);
+  background: rgba(255,255,255,0.96);
+  border-block-end: 1px solid var(--c-border-light);
   position: sticky;
   inset-block-start: var(--nav-h);
   z-index: 100;
@@ -1514,7 +1514,8 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 
 .services-nav__inner {
   display: flex;
-  gap: 0;
+  gap: 0.875rem;
+  padding-block: 0.875rem;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -1525,23 +1526,33 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 .service-chip {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 1.125rem 1.5rem;
+  padding: 0.875rem 1.5rem;
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   font-weight: 500;
-  color: var(--c-ink-60);
+  color: #334155;
   cursor: pointer;
   white-space: nowrap;
-  border-block-end: 2px solid transparent;
-  margin-block-end: -1px;
+  border: none;
+  background: #F1F3F6;
+  border-radius: 999px;
+  flex-shrink: 0;
   transition:
-    color var(--dur-fast),
-    border-color var(--dur-fast);
+    background var(--dur-fast),
+    color var(--dur-fast);
 }
 
-.service-chip:hover { color: var(--c-ink); }
-.service-chip.active { color: var(--c-red); border-block-end-color: var(--c-red); }
+.service-chip:hover {
+  color: var(--c-ink);
+  background: var(--c-white);
+}
+
+.service-chip.active {
+  color: var(--c-white);
+  background: var(--c-red);
+}
 
 /* Service sections */
 .service-section {
