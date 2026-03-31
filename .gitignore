@@ -1,0 +1,8 @@
+# Ignore large project photo assets (733MB — too large for GitHub)
+assets/Content/
+
+# macOS
+.DS_Store
+
+# Claude
+.claude/
