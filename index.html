@@ -115,104 +115,61 @@
     </section>
 
     <!-- ============================================================
-         STATS STRIP
+         TICKER STRIP
     ============================================================ -->
-    <div class="stats" aria-label="Kerncijfers">
-      <div class="container">
-        <div class="stats__grid">
-          <div class="stats__item">
-            <div class="stats__number">
-              <span data-target="40">0</span><em>+</em>
-            </div>
-            <div class="stats__label">Jaar ervaring</div>
-          </div>
-          <div class="stats__item">
-            <div class="stats__number">
-              <span data-target="500">0</span><em>+</em>
-            </div>
-            <div class="stats__label">Voltooide projecten</div>
-          </div>
-          <div class="stats__item">
-            <div class="stats__number">
-              <span data-target="12">0</span>
-            </div>
-            <div class="stats__label">Landen actief</div>
-          </div>
-          <div class="stats__item">
-            <div class="stats__number">
-              <span data-target="80">0</span><em>+</em>
-            </div>
-            <div class="stats__label">Machines in vloot</div>
-          </div>
-        </div>
+    <div class="ticker-strip">
+      <div class="ticker-track">
+        <span>40 jaar ervaring</span>
+        <span class="ticker-sep">—</span>
+        <span>500+ voltooide projecten</span>
+        <span class="ticker-sep">—</span>
+        <span>12 landen actief</span>
+        <span class="ticker-sep">—</span>
+        <span>80+ machines in vloot</span>
+        <span class="ticker-sep">—</span>
+        <span>Familiebedrijf · Antwerpen · opgericht 1984</span>
+        <span class="ticker-sep">—</span>
+        <span>40 jaar ervaring</span>
+        <span class="ticker-sep">—</span>
+        <span>500+ voltooide projecten</span>
+        <span class="ticker-sep">—</span>
+        <span>12 landen actief</span>
+        <span class="ticker-sep">—</span>
+        <span>80+ machines in vloot</span>
+        <span class="ticker-sep">—</span>
+        <span>Familiebedrijf · Antwerpen · opgericht 1984</span>
+        <span class="ticker-sep">—</span>
       </div>
     </div>
 
     <!-- ============================================================
          ONZE DIENSTEN
     ============================================================ -->
-    <section class="section" id="diensten" aria-labelledby="diensten-title">
+    <section class="section diensten-block" id="diensten" aria-labelledby="diensten-title">
       <div class="container">
-        <div class="diensten__header">
-          <div>
-            <div class="eyebrow">Onze diensten</div>
-            <h2 class="section-title" id="diensten-title">
-              Eén partner.<br>Alle expertise.
-            </h2>
-          </div>
-          <div class="diensten__actions">
-            <p class="section-lead" style="text-align:right; margin:0;">
+        <div class="diensten-block__inner">
+          <div class="diensten-block__content reveal">
+            <h2 class="section-title" id="diensten-title">Onze diensten</h2>
+            <p class="section-lead">
               Eén partner voor jouw complete logistieke puzzel, of een betrouwbare specialist voor precies die ene taak. Omdat we meerdere expertises onder één dak hebben, combineren we ze naadloos om jou maximaal te ontzorgen.
             </p>
+            <div class="diensten-block__actions">
+              <a href="industriele-verhuizing.html" class="btn btn--primary">
+                Verken onze diensten
+                <span class="btn__arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="machinepark.html" class="btn btn--outline">
+                Ontdek ons machinepark
+              </a>
+            </div>
           </div>
-        </div>
-
-        <nav class="diensten__list" aria-label="Diensten">
-          <a href="industriele-verhuizing.html#transport" class="dienst-item reveal">
-            <span class="dienst-item__num">01</span>
-            <span class="dienst-item__name">Transport</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#montage" class="dienst-item reveal reveal--d1">
-            <span class="dienst-item__num">02</span>
-            <span class="dienst-item__name">Montage &amp; demontage</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#opslag" class="dienst-item reveal">
-            <span class="dienst-item__num">03</span>
-            <span class="dienst-item__name">Opslag</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#hijswerk" class="dienst-item reveal reveal--d1">
-            <span class="dienst-item__num">04</span>
-            <span class="dienst-item__name">Hijswerk</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#engineering" class="dienst-item reveal">
-            <span class="dienst-item__num">05</span>
-            <span class="dienst-item__name">Engineering</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#interne-verplaatsing" class="dienst-item reveal reveal--d1">
-            <span class="dienst-item__num">06</span>
-            <span class="dienst-item__name">Interne verplaatsing</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="industriele-verhuizing.html#kraanverhuur" class="dienst-item reveal" style="grid-column: 1 / -1;">
-            <span class="dienst-item__num">07</span>
-            <span class="dienst-item__name">Kraanverhuur</span>
-            <span class="dienst-item__arrow" aria-hidden="true">→</span>
-          </a>
-        </nav>
-
-        <div style="display:flex; gap:1rem; margin-top:3rem;" class="reveal reveal--d2">
-          <a href="industriele-verhuizing.html" class="btn btn--primary">
-            Verken onze diensten
-            <span class="btn__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="machinepark.html" class="btn btn--outline">
-            Ontdek ons machinepark
-          </a>
+          <div class="diensten-block__visual reveal reveal--d1">
+            <img
+              src="assets/site-media/1_turn key project/ok/5758BAE5-F017-4AC2-B73A-C2B9FCA598AD.jpg"
+              alt="De Groote NV — industrieel project"
+              loading="lazy"
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -224,7 +181,6 @@
       <div class="container">
         <div class="sectoren__header">
           <div>
-            <div class="eyebrow">In elke sector thuis</div>
             <h2 class="section-title" id="sectoren-title">
               De strengste<br>protocollen.<br>Elke sector.
             </h2>
@@ -296,7 +252,6 @@
       <div class="container">
         <div class="projecten__header">
           <div>
-            <div class="eyebrow">Onze projecten</div>
             <h2 class="section-title" id="projecten-title">
               Vakmanschap<br>in de praktijk
             </h2>
@@ -415,7 +370,6 @@
       </div>
       <div class="container jobs-section__inner">
         <div class="reveal">
-          <div class="eyebrow">Werken bij De Groote</div>
           <h2 class="jobs-section__title" id="jobs-title">
             Ben jij klaar<br>voor het<br>grote werk?
           </h2>
@@ -448,7 +402,6 @@
     ============================================================ -->
     <section class="section section--surface" id="kijker" aria-labelledby="kijker-title">
       <div class="container">
-        <div class="eyebrow reveal">In de kijker</div>
 
         <div class="kijker__grid reveal reveal--d1">
           <a href="cases.html" class="kijker-item kijker-item--featured">
@@ -501,7 +454,6 @@
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container contact-cta__inner">
         <div class="contact-cta__info reveal">
-          <div class="eyebrow">Neem contact met ons op</div>
           <h2 class="contact-cta__title" id="contact-title">
             Vertel ons<br>over uw<br>project
           </h2>
