@@ -11,8 +11,8 @@
 :root {
   /* Color palette */
   --c-white:         #FFFFFF;
-  --c-off-white:     #F5F4F0;
-  --c-surface:       #ECEAE5;
+  --c-off-white:     #F6F6F6;
+  --c-surface:       #EFEFEF;
   --c-ink:           #0F0F0F;
   --c-ink-80:        rgba(15,15,15,0.8);
   --c-ink-60:        rgba(15,15,15,0.6);
@@ -406,13 +406,12 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      160deg,
-      rgba(0,0,0,0.12) 0%,
-      rgba(0,0,0,0.35) 40%,
-      rgba(0,0,0,0.78) 100%
-    );
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.62) 0%,
+    rgba(0,0,0,0.18) 60%,
+    rgba(0,0,0,0.08) 100%
+  );
   z-index: 1;
 }
 
@@ -766,19 +765,38 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 /* ============================================================
    SECTOREN
    ============================================================ */
+.sectoren-section {
+  background: #F4F4F4;
+  border-block: 1px solid #E8E8E8;
+}
+
 .sectoren__header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-10);
-  align-items: end;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
   margin-block-end: var(--sp-12);
 }
 
 .sectoren__header-actions {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-block-end: 4px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sectoren__intro {
+  max-width: 32rem;
+  padding-block-start: 0.875rem;
+  border-block-start: 1px solid rgba(15,15,15,0.14);
+}
+
+.sectoren__lead {
+  margin-block-end: 1.5rem;
+  max-width: none;
+}
+
+.sectoren__cta {
+  font-weight: 600;
 }
 
 .sectoren__grid {

@@ -53,7 +53,7 @@
     if (typeof gsap === 'undefined') {
       // CSS fallback: simply make elements visible
       const els = document.querySelectorAll(
-        '.hero__label, .hero__headline, .hero__text, .hero__actions, .hero__scroll'
+        '.hero__headline, .hero__text, .hero__actions'
       );
       els.forEach((el, i) => {
         el.style.transition = `opacity 0.8s ease ${i * 0.2}s, transform 0.8s ease ${i * 0.2}s`;
@@ -68,18 +68,14 @@
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    const label    = document.querySelector('.hero__label');
     const headline = document.querySelector('.hero__headline');
     const text     = document.querySelector('.hero__text');
     const actions  = document.querySelector('.hero__actions');
-    const scroll   = document.querySelector('.hero__scroll');
 
-    if (label) {
-      tl.to(label,    { opacity: 1, y: 0, duration: 0.9 }, 0.25)
-        .to(headline, { opacity: 1, y: 0, duration: 1.1 }, 0.45)
-        .to(text,     { opacity: 1, y: 0, duration: 0.9 }, 0.7)
-        .to(actions,  { opacity: 1, y: 0, duration: 0.8 }, 0.88)
-        .to(scroll,   { opacity: 1,        duration: 1.2 }, 1.1);
+    if (headline) {
+      tl.to(headline, { opacity: 1, y: 0, duration: 1.1 }, 0.35)
+        .to(text,     { opacity: 1, y: 0, duration: 0.9 }, 0.6)
+        .to(actions,  { opacity: 1, y: 0, duration: 0.8 }, 0.78);
     }
 
     // Scroll-triggered reveals
