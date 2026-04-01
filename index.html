@@ -441,91 +441,26 @@
     <!-- ============================================================
          NEEM CONTACT MET ONS OP
     ============================================================ -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-cta__inner">
-        <div class="contact-cta__info reveal">
-          <h2 class="contact-cta__title" id="contact-title">
-            Vertel ons<br>over uw<br>project
-          </h2>
-          <p class="contact-cta__text">
-            Of het nu gaat om een grootschalige fabrieksverhuis, een eenmalig hijswerk of kraanverhuur — we luisteren en denken graag mee. Ons team staat voor u klaar.
-          </p>
-
-          <div class="contact-cta__divider" aria-hidden="true"></div>
-
-          <div>
-            <div class="contact-detail">
-              <span class="contact-detail__label">Tel</span>
-              <span class="contact-detail__value">
-                <a href="tel:+3235770000">+32 3 577 00 00</a>
-              </span>
-            </div>
-            <div class="contact-detail">
-              <span class="contact-detail__label">E-mail</span>
-              <span class="contact-detail__value">
-                <a href="mailto:info@degroote.be">info@degroote.be</a>
-              </span>
-            </div>
-            <div class="contact-detail">
-              <span class="contact-detail__label">Adres</span>
-              <span class="contact-detail__value">
-                Industrieweg 42, 2030 Antwerpen
-              </span>
-            </div>
-            <div class="contact-detail">
-              <span class="contact-detail__label">Uren</span>
-              <span class="contact-detail__value">
-                Ma–Vr: 07:00–17:00
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="reveal reveal--d2">
-          <form class="contact-form" novalidate aria-label="Contactformulier">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="voornaam">Voornaam</label>
-                <input class="form-input" type="text" id="voornaam" name="voornaam" placeholder="Jan" required>
+    <section class="section contact-simple" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-simple__inner">
+          <h2 class="contact-simple__title reveal" id="contact-title">Neem contact<br>met ons op</h2>
+          <form class="contact-simple__form reveal reveal--d1" novalidate aria-label="Contactformulier">
+            <div class="contact-simple__row">
+              <div class="contact-simple__field">
+                <label class="contact-simple__label" for="naam">Naam</label>
+                <input class="contact-simple__input" type="text" id="naam" name="naam" placeholder="Jan Janssen" required>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="naam">Naam</label>
-                <input class="form-input" type="text" id="naam" name="naam" placeholder="Janssen" required>
+              <div class="contact-simple__field">
+                <label class="contact-simple__label" for="email">E-mail</label>
+                <input class="contact-simple__input" type="email" id="email" name="email" placeholder="jan@bedrijf.be" required>
               </div>
             </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="bedrijf">Bedrijf</label>
-              <input class="form-input" type="text" id="bedrijf" name="bedrijf" placeholder="Uw bedrijfsnaam">
+            <div class="contact-simple__field">
+              <label class="contact-simple__label" for="bericht">Bericht</label>
+              <textarea class="contact-simple__input contact-simple__textarea" id="bericht" name="bericht" placeholder="Beschrijf uw project of vraag…" rows="4"></textarea>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="email">E-mailadres</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="jan@bedrijf.be" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="telefoon">Telefoon</label>
-                <input class="form-input" type="tel" id="telefoon" name="telefoon" placeholder="+32 3 000 00 00">
-              </div>
-            </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="dienst">Dienst</label>
-              <select class="form-select" id="dienst" name="dienst">
-                <option value="">Selecteer een dienst</option>
-                <option value="transport">Transport</option>
-                <option value="montage">Montage &amp; demontage</option>
-                <option value="opslag">Opslag</option>
-                <option value="hijswerk">Hijswerk</option>
-                <option value="engineering">Engineering</option>
-                <option value="interne-verplaatsing">Interne verplaatsing</option>
-                <option value="kraanverhuur">Kraanverhuur</option>
-                <option value="anders">Anders</option>
-              </select>
-            </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="bericht">Uw bericht</label>
-              <textarea class="form-textarea" id="bericht" name="bericht" placeholder="Beschrijf uw project of vraag…" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary form-submit">
+            <button type="submit" class="btn btn--primary">
               Verstuur bericht
               <span class="btn__arrow" aria-hidden="true">→</span>
             </button>

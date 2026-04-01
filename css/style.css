@@ -116,6 +116,91 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 .section--alt    { background: var(--c-off-white); }
 .section--dark   { background: var(--c-ink); color: var(--c-white); }
 .section--surface { background: var(--c-surface); }
+.section--compact { padding-block: var(--sp-10); }
+
+/* ============================================================
+   CONTACT SIMPLE
+   ============================================================ */
+.contact-simple {
+  padding-block: clamp(5rem, 9vw, 8rem);
+}
+
+.contact-simple__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: clamp(3rem, 6vw, 7rem);
+  align-items: start;
+}
+
+.contact-simple__title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--c-ink);
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.contact-simple__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-simple__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--sp-8);
+}
+
+.contact-simple__field {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--c-border);
+  padding-block: var(--sp-6);
+  transition: border-color var(--dur-base);
+}
+
+.contact-simple__field:focus-within {
+  border-color: var(--c-ink);
+}
+
+.contact-simple__label {
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-ink-40);
+  margin-bottom: var(--sp-2);
+}
+
+.contact-simple__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--c-ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body-lg);
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  appearance: none;
+}
+
+.contact-simple__input::placeholder {
+  color: var(--c-ink-20);
+}
+
+.contact-simple__textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.contact-simple__form .btn {
+  margin-block-start: var(--sp-10);
+  align-self: flex-start;
+}
 
 /* ============================================================
    INNER PAGE NAV — always white, always real logo
@@ -2376,6 +2461,20 @@ html:has(.page-hero) .nav__hamburger span { background: var(--c-ink); }
 
   .contact-form { padding: var(--sp-6); }
   .dienst-other__cards { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-simple__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-10);
+  }
+
+  .contact-simple__title {
+    position: static;
+    font-size: var(--fs-md);
+  }
+
+  .contact-simple__row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================================
