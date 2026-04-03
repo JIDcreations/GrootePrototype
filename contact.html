@@ -53,175 +53,93 @@
 
   <main>
 
-    <!-- PAGE HERO (minimal — contact page should feel approachable) -->
-    <header class="page-hero" style="min-height:360px; display:flex; flex-direction:column; justify-content:flex-end;">
-      <div class="page-hero__noise" aria-hidden="true"></div>
-      <div class="container page-hero__content" style="padding-bottom:var(--section-py);">
-        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="page-hero__breadcrumb-sep">/</span>
-          <span aria-current="page">Contact</span>
-        </nav>
-        <h1 class="page-hero__title">Neem contact<br>met ons op</h1>
-        <p class="page-hero__lead">
-          Ons team staat klaar om uw vragen te beantwoorden en mee te denken over uw project. Aarzel niet.
+    <!-- HEADER -->
+    <section style="padding: 8rem 0 5rem;">
+      <div class="container" style="max-width:720px;">
+        <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-0.03em;line-height:1.05;margin-bottom:1.5rem;">Contacteer ons</h1>
+        <p style="font-size:1.125rem;color:var(--c-ink-60);line-height:1.7;max-width:560px;">
+          Klaar om jouw project in beweging te zetten? Wij denken graag met je mee. Neem direct contact op met onze specialisten of vraag een vrijblijvende offerte aan.
         </p>
       </div>
-    </header>
+    </section>
 
-    <!-- CONTACT GRID -->
-    <section class="section" aria-labelledby="contact-form-title">
-      <div class="container contact-grid">
+    <!-- DEPARTMENTS -->
+    <section style="border-top:1px solid var(--c-border);padding:5rem 0;">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;border:1px solid var(--c-border);">
 
-        <!-- INFO COLUMN -->
-        <div class="reveal">
-          <div class="eyebrow">Contactgegevens</div>
-          <h2 class="section-title" id="contact-form-title" style="margin-bottom:2rem;">
-            Wij zijn<br>bereikbaar
-          </h2>
-
-          <!-- Quick contact cards -->
-          <div style="display:flex;flex-direction:column;gap:1px;background:var(--c-border);margin-bottom:2.5rem;">
-            <a href="tel:+3235770000" style="display:flex;gap:1.5rem;align-items:center;background:var(--c-white);padding:1.5rem 2rem;text-decoration:none;color:var(--c-ink);transition:background var(--dur-fast);" onmouseover="this.style.background='var(--c-off-white)'" onmouseout="this.style.background='var(--c-white)'">
-              <div style="width:44px;height:44px;background:var(--c-red);display:flex;align-items:center;justify-content:center;color:var(--c-white);font-size:1.25rem;flex-shrink:0;">☎</div>
-              <div>
-                <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:0.25rem;">Telefoon</div>
-                <div style="font-family:var(--font-display);font-size:var(--fs-sm-hd);font-weight:700;letter-spacing:-0.02em;">+32 3 577 00 00</div>
-              </div>
-            </a>
-            <a href="mailto:info@degroote.be" style="display:flex;gap:1.5rem;align-items:center;background:var(--c-white);padding:1.5rem 2rem;text-decoration:none;color:var(--c-ink);transition:background var(--dur-fast);" onmouseover="this.style.background='var(--c-off-white)'" onmouseout="this.style.background='var(--c-white)'">
-              <div style="width:44px;height:44px;background:var(--c-ink);display:flex;align-items:center;justify-content:center;color:var(--c-white);font-size:1.125rem;flex-shrink:0;">✉</div>
-              <div>
-                <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:0.25rem;">E-mail</div>
-                <div style="font-family:var(--font-display);font-size:var(--fs-sm-hd);font-weight:700;letter-spacing:-0.02em;">info@degroote.be</div>
-              </div>
-            </a>
+          <div style="padding:2.5rem;border-right:1px solid var(--c-border);">
+            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:1.25rem;">Onthaal</div>
+            <div style="font-size:0.9375rem;line-height:1.6;color:var(--c-ink);margin-bottom:1.25rem;">Valerie Buysse – Vicky Fiers</div>
+            <a href="mailto:info@degrootenv.be" style="display:block;font-size:0.9375rem;color:var(--c-ink);text-decoration:none;margin-bottom:0.375rem;">info@degrootenv.be</a>
+            <a href="tel:+3293555314" style="display:block;font-size:0.9375rem;color:var(--c-ink-60);text-decoration:none;">Tel. +32 9 355 53 14</a>
           </div>
 
-          <!-- Location info -->
-          <div style="padding:2rem;background:var(--c-off-white);margin-bottom:2rem;">
-            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:1.25rem;">Ons adres</div>
-            <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.5rem;">De Groote NV</div>
-            <p style="font-size:var(--fs-body);color:var(--c-ink-60);line-height:1.65;margin-bottom:1.25rem;">
-              Industrieweg 42<br>
-              2030 Antwerpen<br>
-              België
-            </p>
-            <div style="font-size:var(--fs-xs);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:0.5rem;">Openingsuren</div>
-            <div style="font-size:var(--fs-body);color:var(--c-ink-60);">
-              Maandag – Vrijdag: 07:00 – 17:00<br>
-              Zaterdag – Zondag: Gesloten
-            </div>
+          <div style="padding:2.5rem;border-right:1px solid var(--c-border);">
+            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:1.25rem;">Planning / projectvoorbereiding</div>
+            <div style="font-size:0.9375rem;line-height:1.6;color:var(--c-ink);margin-bottom:1.25rem;">Geert Vanderstappen – Melvin Vandenbroucke</div>
+            <a href="mailto:planning@degrootenv.be" style="display:block;font-size:0.9375rem;color:var(--c-ink);text-decoration:none;margin-bottom:0.375rem;">planning@degrootenv.be</a>
+            <a href="tel:+3293555314" style="display:block;font-size:0.9375rem;color:var(--c-ink-60);text-decoration:none;">Tel. +32 9 355 53 14</a>
           </div>
 
-          <!-- Emergency -->
-          <div style="padding:1.5rem 2rem;background:var(--c-ink);display:flex;align-items:center;gap:1.5rem;">
-            <div style="flex:1;">
-              <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.375rem;">Dringende interventie</div>
-              <div style="font-family:var(--font-display);font-size:var(--fs-sm-hd);font-weight:700;letter-spacing:-0.02em;color:var(--c-white);">24/7 bereikbaar</div>
-            </div>
-            <a href="tel:+32477000000" style="font-size:var(--fs-sm);font-weight:600;color:var(--c-red);text-decoration:none;white-space:nowrap;">+32 477 00 00 00</a>
+          <div style="padding:2.5rem;">
+            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:1.25rem;">Financiële en personeelsdienst</div>
+            <div style="font-size:0.9375rem;line-height:1.6;color:var(--c-ink);margin-bottom:1.25rem;">An Braeckman – Ellen De Groote</div>
+            <a href="mailto:boekhouding@degrootenv.be" style="display:block;font-size:0.9375rem;color:var(--c-ink);text-decoration:none;margin-bottom:0.375rem;">boekhouding@degrootenv.be</a>
+            <a href="tel:+3292771407" style="display:block;font-size:0.9375rem;color:var(--c-ink-60);text-decoration:none;">Tel. +32 9 277 14 07</a>
           </div>
 
-          <!-- Map -->
-          <div class="contact-map-wrap" style="margin-top:2rem;">
-            <span>Kaart laden…</span>
-          </div>
-
-        </div>
-
-        <!-- FORM COLUMN -->
-        <div class="reveal reveal--d2">
-          <div class="eyebrow">Stuur een bericht</div>
-          <h2 style="font-family:var(--font-display);font-size:var(--fs-md);font-weight:800;letter-spacing:-0.025em;margin-bottom:2rem;">
-            Vertel ons over uw project
-          </h2>
-
-          <form class="contact-form" novalidate aria-label="Contactformulier">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="c-voornaam">Voornaam *</label>
-                <input class="form-input" type="text" id="c-voornaam" name="voornaam" placeholder="Jan" required autocomplete="given-name">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="c-naam">Naam *</label>
-                <input class="form-input" type="text" id="c-naam" name="naam" placeholder="Janssen" required autocomplete="family-name">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="c-email">E-mailadres *</label>
-                <input class="form-input" type="email" id="c-email" name="email" placeholder="jan@bedrijf.be" required autocomplete="email">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="c-tel">Telefoon</label>
-                <input class="form-input" type="tel" id="c-tel" name="telefoon" placeholder="+32 3 000 00 00" autocomplete="tel">
-              </div>
-            </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="c-bedrijf">Bedrijf</label>
-              <input class="form-input" type="text" id="c-bedrijf" name="bedrijf" placeholder="Uw bedrijfsnaam" autocomplete="organization">
-            </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="c-dienst">Dienst van interesse</label>
-              <select class="form-select" id="c-dienst" name="dienst">
-                <option value="">Selecteer een dienst</option>
-                <option value="transport">Transport</option>
-                <option value="montage">Montage &amp; demontage</option>
-                <option value="opslag">Opslag</option>
-                <option value="hijswerk">Hijswerk</option>
-                <option value="engineering">Engineering</option>
-                <option value="interne-verplaatsing">Interne verplaatsing</option>
-                <option value="kraanverhuur">Kraanverhuur</option>
-                <option value="offerte">Algemene offerte</option>
-                <option value="anders">Anders</option>
-              </select>
-            </div>
-            <div class="form-group form-group--full">
-              <label class="form-label" for="c-bericht">Uw bericht *</label>
-              <textarea class="form-textarea" id="c-bericht" name="bericht" placeholder="Beschrijf uw project, tijdlijn, locatie en eventuele bijzonderheden…" rows="6" required></textarea>
-            </div>
-            <div class="form-group form-group--full">
-              <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;">
-                <input type="checkbox" style="margin-top:3px;accent-color:var(--c-red);flex-shrink:0;" required>
-                <span style="font-size:var(--fs-sm);color:var(--c-ink-60);line-height:1.55;">
-                  Ik ga akkoord met het <a href="#" style="color:var(--c-ink);text-decoration:underline;">privacybeleid</a> van De Groote NV. *
-                </span>
-              </label>
-            </div>
-            <button type="submit" class="btn btn--primary form-submit">
-              Bericht versturen
-              <span class="btn__arrow">→</span>
-            </button>
-            <p style="font-size:var(--fs-xs);color:var(--c-ink-40);margin-top:0.75rem;text-align:center;">
-              * Verplichte velden · We reageren binnen 1 werkdag
-            </p>
-          </form>
         </div>
       </div>
     </section>
 
-    <!-- DEPARTMENTS STRIP -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="eyebrow reveal">Directe contacten</div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--c-border);margin-top:2rem;" class="reveal reveal--d1">
-          <div style="background:var(--c-white);padding:2rem;">
-            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-red);margin-bottom:0.75rem;">Commercieel</div>
-            <div style="font-family:var(--font-display);font-weight:700;font-size:1.125rem;letter-spacing:-0.01em;margin-bottom:0.375rem;">Verkoop &amp; offertes</div>
-            <a href="mailto:verkoop@degroote.be" style="font-size:var(--fs-sm);color:var(--c-ink-60);text-decoration:none;transition:color var(--dur-fast);" onmouseover="this.style.color='var(--c-red)'" onmouseout="this.style.color='var(--c-ink-60)'">verkoop@degroote.be</a>
+    <!-- CONTACT FORM -->
+    <section style="border-top:1px solid var(--c-border);padding:5rem 0 8rem;">
+      <div class="container" style="max-width:720px;">
+        <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-40);margin-bottom:2rem;">Contactformulier</div>
+
+        <form class="contact-form" novalidate aria-label="Contactformulier">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="c-voornaam">Voornaam *</label>
+              <input class="form-input" type="text" id="c-voornaam" name="voornaam" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-naam">Naam *</label>
+              <input class="form-input" type="text" id="c-naam" name="naam" required autocomplete="family-name">
+            </div>
           </div>
-          <div style="background:var(--c-white);padding:2rem;">
-            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-red);margin-bottom:0.75rem;">HR</div>
-            <div style="font-family:var(--font-display);font-weight:700;font-size:1.125rem;letter-spacing:-0.01em;margin-bottom:0.375rem;">Jobs &amp; sollicitaties</div>
-            <a href="mailto:jobs@degroote.be" style="font-size:var(--fs-sm);color:var(--c-ink-60);text-decoration:none;transition:color var(--dur-fast);" onmouseover="this.style.color='var(--c-red)'" onmouseout="this.style.color='var(--c-ink-60)'">jobs@degroote.be</a>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="c-email">E-mailadres *</label>
+              <input class="form-input" type="email" id="c-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-tel">Telefoon</label>
+              <input class="form-input" type="tel" id="c-tel" name="telefoon" autocomplete="tel">
+            </div>
           </div>
-          <div style="background:var(--c-white);padding:2rem;">
-            <div style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-red);margin-bottom:0.75rem;">Operationeel</div>
-            <div style="font-family:var(--font-display);font-weight:700;font-size:1.125rem;letter-spacing:-0.01em;margin-bottom:0.375rem;">Planning &amp; dispatch</div>
-            <a href="tel:+3235770001" style="font-size:var(--fs-sm);color:var(--c-ink-60);text-decoration:none;transition:color var(--dur-fast);" onmouseover="this.style.color='var(--c-red)'" onmouseout="this.style.color='var(--c-ink-60)'">+32 3 577 00 01</a>
+          <div class="form-group form-group--full">
+            <label class="form-label" for="c-bedrijf">Bedrijf</label>
+            <input class="form-input" type="text" id="c-bedrijf" name="bedrijf" autocomplete="organization">
           </div>
-        </div>
+          <div class="form-group form-group--full">
+            <label class="form-label" for="c-bericht">Bericht *</label>
+            <textarea class="form-textarea" id="c-bericht" name="bericht" rows="6" required></textarea>
+          </div>
+          <div class="form-group form-group--full">
+            <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;">
+              <input type="checkbox" style="margin-top:3px;accent-color:var(--c-red);flex-shrink:0;" required>
+              <span style="font-size:var(--fs-sm);color:var(--c-ink-60);line-height:1.55;">
+                Ik ga akkoord met het <a href="#" style="color:var(--c-ink);text-decoration:underline;">privacybeleid</a> van De Groote NV. *
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">
+            Versturen
+            <span class="btn__arrow">→</span>
+          </button>
+        </form>
       </div>
     </section>
 

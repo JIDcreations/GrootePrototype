@@ -388,6 +388,191 @@
     </section>
 
     <!-- ============================================================
+         OVER ONS
+    ============================================================ -->
+    <style>
+      /* ================================================================
+         OVER ONS — HOMEPAGE SECTION  (scoped to .oo-hp prefix)
+         ================================================================ */
+      .oo-hp {
+        padding-block: clamp(5rem, 10vw, 9rem);
+        background: var(--c-ink);
+        color: var(--c-white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Diagonal stripe texture */
+      .oo-hp::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          -52deg,
+          transparent 0px,
+          transparent 52px,
+          rgba(255,255,255,0.018) 52px,
+          rgba(255,255,255,0.018) 53px
+        );
+        pointer-events: none;
+      }
+
+      /* Warm red radial glow — bottom right */
+      .oo-hp::after {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        right: -100px;
+        width: 560px;
+        height: 560px;
+        background: radial-gradient(ellipse at center, rgba(200,0,26,0.11), transparent 65%);
+        pointer-events: none;
+      }
+
+      .oo-hp__inner {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: clamp(4rem, 7vw, 8rem);
+        align-items: center;
+      }
+
+      /* ---- Left column ---- */
+      .oo-hp__eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--sp-3);
+        font-size: 0.6875rem;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--c-red);
+        margin-bottom: var(--sp-5);
+      }
+      .oo-hp__eyebrow::before {
+        content: '';
+        width: 28px;
+        height: 1.5px;
+        background: var(--c-red);
+        flex-shrink: 0;
+      }
+
+      .oo-hp__headline {
+        font-size: var(--fs-xl);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1.0;
+        color: var(--c-white);
+        margin-bottom: var(--sp-8);
+      }
+
+      .oo-hp__body {
+        font-size: 1.0625rem;
+        line-height: 1.78;
+        color: rgba(255,255,255,0.55);
+        max-width: 48ch;
+        margin-bottom: var(--sp-10);
+      }
+
+      /* ---- Right column: stats grid ---- */
+      .oo-hp__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid rgba(255,255,255,0.09);
+      }
+
+      .oo-hp__stat {
+        padding: clamp(1.5rem, 2.5vw, 2.25rem);
+        border-right: 1px solid rgba(255,255,255,0.09);
+        border-bottom: 1px solid rgba(255,255,255,0.09);
+        position: relative;
+        overflow: hidden;
+      }
+      .oo-hp__stat:nth-child(2n)  { border-right: none; }
+      .oo-hp__stat:nth-child(3),
+      .oo-hp__stat:nth-child(4)   { border-bottom: none; }
+
+      /* Red underline slides in on hover */
+      .oo-hp__stat::after {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 0; height: 2px;
+        background: var(--c-red);
+        transition: width 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .oo-hp__stat:hover::after { width: 100%; }
+
+      .oo-hp__stat-val {
+        display: block;
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        color: var(--c-white);
+        margin-bottom: 0.4rem;
+      }
+      .oo-hp__stat-val b {
+        color: var(--c-red);
+        font-weight: 800;
+      }
+      .oo-hp__stat-lbl {
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+      }
+
+      @media (max-width: 860px) {
+        .oo-hp__inner { grid-template-columns: 1fr; gap: var(--sp-12); }
+      }
+    </style>
+
+    <section class="section oo-hp" id="over-ons" aria-labelledby="oo-hp-title">
+      <div class="container">
+        <div class="oo-hp__inner">
+
+          <div class="reveal">
+            <p class="oo-hp__eyebrow">Over ons</p>
+            <h2 class="oo-hp__headline" id="oo-hp-title">
+              Vier decennia<br>kracht met<br>precisie.
+            </h2>
+            <p class="oo-hp__body">
+              In 1984 begon alles met één kraan en een familienaam in Antwerpen. Vandaag zijn we één van de meest ervaren industriële verhuizers van de Benelux — met dezelfde betrokkenheid als op dag één.
+            </p>
+            <a href="over-ons.html" class="btn btn--primary">
+              Lees ons verhaal <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="reveal reveal--d1">
+            <div class="oo-hp__stats">
+              <div class="oo-hp__stat">
+                <span class="oo-hp__stat-val">40<b>+</b></span>
+                <span class="oo-hp__stat-lbl">Jaar ervaring</span>
+              </div>
+              <div class="oo-hp__stat">
+                <span class="oo-hp__stat-val">80<b>+</b></span>
+                <span class="oo-hp__stat-lbl">Medewerkers</span>
+              </div>
+              <div class="oo-hp__stat">
+                <span class="oo-hp__stat-val">500<b>+</b></span>
+                <span class="oo-hp__stat-lbl">Projecten</span>
+              </div>
+              <div class="oo-hp__stat">
+                <span class="oo-hp__stat-val">12</span>
+                <span class="oo-hp__stat-lbl">Landen actief</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          IN DE KIJKER
     ============================================================ -->
     <section class="section section--surface" id="kijker" aria-labelledby="kijker-title">
@@ -506,6 +691,7 @@
         <div>
           <div class="footer__col-title">Bedrijf</div>
           <ul class="footer__links">
+            <li><a href="over-ons.html" class="footer__link">Over ons</a></li>
             <li><a href="sectoren.html" class="footer__link">Sectoren</a></li>
             <li><a href="cases.html" class="footer__link">Cases</a></li>
             <li><a href="machinepark.html" class="footer__link">Machinepark</a></li>
